@@ -4,6 +4,8 @@
 <!-- <p [id]="monPara" [attr.monAtt]="{'text-primary display-1':true, 'text-danger':false}">Hello word</p>
 <p>{{texte}}</p>
 <button class="btn btn-primary" type="button" (click)="onClickButton()">Cliquez ici</button> -->
-<input type="text" name="text" class="form-control" placeholder="Saisir ici" [(ngModel)]="texte"/>
-<p>{{texte}}</p>
+<!-- <input type="text" name="text" class="form-control" placeholder="Saisir ici" [(ngModel)]="texte"/>
+<p>{{texte}}</p> -->
 
+<button class="btn btn-primary" type="button" (click)="onClickButton()">Toggle</button>
+<p *ngIf="affiche">{{texte}}</p>

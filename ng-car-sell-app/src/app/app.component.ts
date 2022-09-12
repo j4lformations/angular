@@ -8,9 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   monPara: number = 0;
   texte='Bonjour char ami';
+  affiche=false;
 
   onClickButton():void{
-    console.log('Hello Word');
-    this.texte='Bonjour';
+    // console.log('Hello Word');
+    // this.texte='Bonjour';
+    this.affiche = this.affiche?false:true;
   }
 }
