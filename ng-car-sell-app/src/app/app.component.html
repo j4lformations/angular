@@ -1,1 +1,5 @@
 <app-header></app-header>
+<!-- <p [id]="monPara" [class]="2>3?'text-primary':'text-danger'">Hello word</p> -->
+<p [id]="monPara" [ngClass]="{'text-primary display-1':true, 'text-danger':false}">Hello word</p>
+<p [id]="monPara" [attr.monAtt]="{'text-primary display-1':true, 'text-danger':false}">Hello word</p>
+
