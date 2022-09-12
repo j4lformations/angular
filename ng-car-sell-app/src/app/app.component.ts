@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   monPara: number = 0;
+  texte='Bonjour char ami';
+
+  onClickButton():void{
+    console.log('Hello Word');
+    this.texte='Bonjour';
+  }
 }
